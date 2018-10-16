@@ -16,7 +16,7 @@ angular.module('contact')
 }])
 .controller('ContactController', function ($scope, $http, $messageHub, $sce) {
 
-	var storesApi = '../../../../../../js/bookshop/api/Stores/Stores.js';
+	var storesApi = '../../../../../../js/bookshop-admin/api/Stores/Stores.js';
 
 	function loadLocation(storeId) {
 		$http.get(storesApi + '/' + storeId)
